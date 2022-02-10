@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: rajashekarjangam/node-web-app
+        image: rajashekarjangam/node-docker-web-app
         ports:
         - containerPort: 80
