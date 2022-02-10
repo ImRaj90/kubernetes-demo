@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-nginx-svc
+  name: my-nginx-node-web-app-svc2
   labels:
     app: nginx
 spec:
@@ -14,11 +14,11 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-nginx
+  name: my-node-web-app
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
